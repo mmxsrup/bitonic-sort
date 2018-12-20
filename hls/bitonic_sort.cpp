@@ -1,9 +1,9 @@
 #include "bitonic_sort.hpp"
 
-#include "ap_int.h"
-#include <hls_stream.h>
+// #include "ap_int.h"
+// #include "hls_stream.h"
 
-void bitonic_sort(hls::stream<ap_int<DATA_W>> axis_in[], hls::stream<ap_int<DATA_W>> axis_out[]) {
+void bitonic_sort(hls::stream<ap_int<DATA_W> > axis_in[DATA_SIZE], hls::stream<ap_int<DATA_W> > axis_out[DATA_SIZE]) {
 
 	ap_int<DATA_W> datas[DATA_SIZE];
 
