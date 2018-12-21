@@ -32,8 +32,8 @@ int tb_bitonic_sort() {
 
 	// Make test data
 	TestData testdatas[TEST_NUM];
-	for (int i = 0; i < DATA_SIZE; ++i) {
-		makeTestData(testdatas[i]);
+	for (int id = 0; id < TEST_NUM; ++id) {
+		makeTestData(testdatas[id]);
 	}
 
 	// Set input data
