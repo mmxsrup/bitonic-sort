@@ -1,7 +1,5 @@
 #include "bitonic_sort.hpp"
 
-// #include "ap_int.h"
-// #include <hls_stream.h>
 #include <cstdio>
 #include <algorithm>
 
