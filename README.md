@@ -7,13 +7,13 @@ Used to verify the algorithm
 Vivado HLS Project
 
 
-#### reference
-- English
-https://en.wikipedia.org/wiki/Bitonic_sorter
-http://www.inf.fh-flensburg.de/lang/algorithmen/sortieren/bitonic/bitonicen.htm
+### reference
+- English  
+https://en.wikipedia.org/wiki/Bitonic_sorter  
+http://www.inf.fh-flensburg.de/lang/algorithmen/sortieren/bitonic/bitonicen.htm  
 https://www.cs.rutgers.edu/~venugopa/parallel_summer2012/bitonic_overview.html
 
-- Japanese
+- Japanese  
 https://t-pot.com/program/90_BitonicSort/index.html
 
 
