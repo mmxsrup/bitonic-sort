@@ -20,8 +20,9 @@ int tb_bitonic_sort();
 
 
 int main() {
-	// return number of error
-	return tb_bitonic_sort();
+	int err = tb_bitonic_sort();
+	// Return 1 if the number of errors is non-zero
+	return err != 0;
 }
 
 
@@ -61,6 +62,7 @@ int tb_bitonic_sort() {
 	for (int id = 0; id < TEST_NUM; ++id) {
 		err += check(testdatas[id]);
 	}
+	std::cout << "Number of errors: " << err << std::endl;
 	return err;
 
 }
