@@ -6,5 +6,4 @@
 void swap1(ap_int<DATA_W> &data1, ap_int<DATA_W> &data2);
 void swap2(ap_int<DATA_W> &data1, ap_int<DATA_W> &data2);
 
-
 #endif
