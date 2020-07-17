@@ -27,7 +27,7 @@ make -C proj/ clean
 └── proj       # script files for Vivado HLS project
 ```
 
-## reference
+## Reference
 * [Bitonic sorter - wiki](https://en.wikipedia.org/wiki/Bitonic_sorter)
 * [Bitonic sort](http://www.inf.fh-flensburg.de/lang/algorithmen/sortieren/bitonic/bitonicen.htm)
 * [Bitonic Sort: Overview](https://www.cs.rutgers.edu/~venugopa/parallel_summer2012/bitonic_overview.html)
