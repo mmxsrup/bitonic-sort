@@ -1,27 +1,37 @@
-############################################################
-## This file is generated automatically by Vivado HLS.
-## Please DO NOT edit it.
-## Copyright (C) 1986-2018 Xilinx, Inc. All Rights Reserved.
-############################################################
-open_project bitonic_sort
-set_top bitonic_sort
+# Create a project
+open_project -reset bitonic_sort
+
+# Add design files
 add_files ../hls/swap.hpp
 add_files ../hls/swap.cpp
 add_files ../hls/sorting_network.hpp
 add_files ../hls/sorting_network.cpp
 add_files ../hls/bitonic_sort.hpp
 add_files ../hls/bitonic_sort.cpp
-add_files -tb ../hls/tb_bitonic_sort.cpp -cflags "-Wno-unknown-pragmas"
 
-open_solution "solution1"
-set_part {xczu9eg-ffvb1156-2-i} -tool vivado
+# Add test bench
+add_files -tb ../hls/tb_bitonic_sort.cpp
 
+# Set the top-level function
+set_top bitonic_sort
+
+# Create a solution
+open_solution -reset solution1
+
+# Define technology and clock rate
+set_part  {xc7k160tfbg484-1}
 create_clock -period 10 -name default
-#source "directives.tcl"
 
+# C simulation
 csim_design
+
+# Run synthesis
 csynth_design
-cosim_design
-export_design -format ip_catalog
+
+# RTL simulation
+cosim_design -trace_level all
+
+# RTL implementation
+export_design
 
 exit
