@@ -1,6 +1,9 @@
 # FPGA Bitonic Sort
 Project to synthesize bitonic sort circuit using Vivado HLS
 
+## Requirement
+* Vivado HLS 2019.2
+
 ## Usage
 ### Build
 ```
