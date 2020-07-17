@@ -1,9 +1,9 @@
 #ifndef __BITONIC_SORT_HPP__
 #define __BITONIC_SORT_HPP__
 
-// avoid Cosim Error
-#include "/opt/Xilinx/Vivado/2018.2/include/gmp.h"
-#include "/opt/Xilinx/Vivado/2018.2/include/mpfr.h"
+// Avoid cosim error
+#include <gmp.h>
+#define __gmp_const const
 
 #include "ap_int.h"
 #include "hls_stream.h"
